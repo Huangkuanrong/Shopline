@@ -19,13 +19,14 @@
         .nav{
             color: #fff;
             padding: 20px;
+            width: 1040px;
             margin: auto;
         }
         .nav .menu{
             display: flex;
-            justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
-            margin-left: -30px;
+            margin: auto;
         }
         .nav .menu a{
             padding: 15px;
@@ -35,14 +36,13 @@
             text-align: left;
         }
         .nav .menu img{
-            padding: 12px;
             height: 25px;
-            margin: 0 25px;
+            margin: auto;
         }
         .nav .menu button{
             width: 140px;
             height: 50px;
-            margin-left: 20px;
+            margin: auto;
             font-weight: bold;
         }
         .header{
@@ -116,44 +116,77 @@
             margin: auto;
             margin-top: 50px;
         }
-        .item{
+        .wrap .item{
             display: flex;
         }
-        .item:nth-child(odd){
+        .wrap .item:nth-child(odd){
             flex-direction: row-reverse;
         }
-        .item .pic{
+        .wrap .item .pic{
             width: 510px;
             margin: 5px;
         }
-        .item .pic img{
+        .wrap .item .pic img{
             width: 100%;
         }
-        .item .text{
+        .wrap .item .text{
             width: 510px;
             margin: 5px;
         }
-        .item .text h2{
+        .wrap .item .text h2{
             font-size: 30px;
             font-weight: bold;
             line-height: 1.3;
             margin: 20px 0;
         }
-        .item .text p{
+        .wrap .item .text p{
             font-size: 16px;
             font-weight: lighter;
             line-height: 1.8;
         }
+
+        .more{
+            width: 920px;
+            height: 300px;
+        }
+
+        .more .card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+        }
+        .more .card .item .pic{
+            width: 100%;
+            margin: 5px;
+        }
+        .more .card .item .text h2{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        .more .card .item .text p{
+            width: 300px;
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 1.8;
+        }
+
+
     </style>
-    <script type="text/javascript">
+    <script>
         var slide_index = [0, 50, 100];
         var i = 0;
         setTimeout(function(){
+          if (i > 2) {
+            i=0;
+          }
+          else{
             i++;
-            document.querySelector('.header .pic img').style.objectPosition  = `${slide_index[i]}% 0%`;
-            if (i == 2) {
-                i=-1;
-            }
+          }
+          document.querySelector('.header .pic img').style.objectPosition  = `${slide_index[i]}% 0%`;
         }, 1000);
     </script>
   </head>
@@ -161,7 +194,7 @@
     <header>
         <div class="nav">
             <div class="menu">
-                <img src="\img\original--Ao7m1x.png">
+                <img src="img/original--Ao7m1x.png">
                 <a href="#">新手上路</a>
                 <a href="#">開店服務</a>
                 <a href="#">行銷推廣</a>
@@ -183,7 +216,7 @@
                 <p class="small-note">＊無需綁定信用卡提供付款資訊</p>
             </div>
             <div class="pic">
-                <img src="\img\1200x.webp">
+                <img src="img/1200x.webp">
             </div>
         </div>
     </header>
@@ -270,6 +303,74 @@
           </p>
         </div>
       </div>
+    </div>
+
+    
+    <div class="more">
+      <div class="title">更多功能與服務</div>
+      <div class="card">
+        <div class="item">
+          <div class="pic">
+            <img src="https://fakeimg.pl/100x100/200">
+          </div>
+          <div class="text">
+            <h2>強大庫存與訂單系統</h2>
+            <p>
+              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
+            </p>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://fakeimg.pl/100x100/200">
+          </div>
+          <div class="text">
+            <h2>強大庫存與訂單系統</h2>
+            <p>
+              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
+            </p>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://fakeimg.pl/100x100/200">
+          </div>
+          <div class="text">
+            <h2>強大庫存與訂單系統</h2>
+            <p>
+              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
+            </p>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://fakeimg.pl/100x100/200">
+          </div>
+          <div class="text">
+            <h2>強大庫存與訂單系統</h2>
+            <p>
+              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
+            </p>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://fakeimg.pl/100x100/200">
+          </div>
+          <div class="text">
+            <h2>強大庫存與訂單系統</h2>
+            <p>
+              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
+            </p>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://fakeimg.pl/100x100/200">
+          </div>
+          <div class="text">
+            <h2>強大庫存與訂單系統</h2>
+            <p>
+              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
+            </p>
+        </div>
+      </div>
+      
     </div>
   </body>
 </html>
