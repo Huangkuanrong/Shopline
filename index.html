@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            background: #ebf1f8;
+        }
+        .blue-white {
+            background: #0061ff;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+        }
+        .nav{
+            color: #fff;
+            padding: 20px;
+            margin: auto;
+        }
+        .nav .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -30px;
+        }
+        .nav .menu a{
+            padding: 15px;
+            text-decoration: none;
+            color: #00142d;
+            font-size: 16px;
+            text-align: left;
+        }
+        .nav .menu img{
+            padding: 12px;
+            height: 25px;
+            margin: 0 25px;
+        }
+        .nav .menu button{
+            width: 140px;
+            height: 50px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+        .header{
+            display: flex;
+            width: 1040px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .header .pic{
+            width: 520px;
+            height: 520px;
+            margin: 20px;
+        }
+        .header .pic img{
+            width: 480px;
+            height: 520px;
+            object-fit: cover;
+            object-position: 0% 0%;
+        }
+
+        .header .text{
+            width: 520px;
+            margin: 20px;
+            color: #00142d;
+        }
+
+        .header .text h1{
+            font-size: 40px;
+            font-weight: bold;
+            line-height: 1.3;
+        }
+        .header .text p{
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 1.8;
+        }
+        .header button{
+            width: 300px;
+            height: 50px;
+        }
+        .header .text .small-note{
+            font-size: 13px;
+            font-weight: lighter;
+            color: #00142d;
+        }
+        .blank{
+            background: #fff;
+            width: 100%;
+            height: 100px;
+        }
+
+        .content{
+            width: 1040px;
+            margin: auto;
+        }
+
+        .content .text{
+            margin-top: 50px;
+            margin-bottom: 80px;
+            color: #00142d;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+
+
+
+        
+        .wrap{
+            width: 1040px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .item{
+            display: flex;
+        }
+        .item:nth-child(odd){
+            flex-direction: row-reverse;
+        }
+        .item .pic{
+            width: 510px;
+            margin: 5px;
+        }
+        .item .pic img{
+            width: 100%;
+        }
+        .item .text{
+            width: 510px;
+            margin: 5px;
+        }
+        .item .text h2{
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.3;
+            margin: 20px 0;
+        }
+        .item .text p{
+            font-size: 16px;
+            font-weight: lighter;
+            line-height: 1.8;
+        }
+    </style>
+    <script type="text/javascript">
+        var slide_index = [0, 50, 100];
+        var i = 0;
+        setTimeout(function(){
+            i++;
+            document.querySelector('.header .pic img').style.objectPosition  = `${slide_index[i]}% 0%`;
+            if (i == 2) {
+                i=-1;
+            }
+        }, 1000);
+    </script>
+  </head>
+  <body>
+    <header>
+        <div class="nav">
+            <div class="menu">
+                <img src="\img\original--Ao7m1x.png">
+                <a href="#">新手上路</a>
+                <a href="#">開店服務</a>
+                <a href="#">行銷推廣</a>
+                <a href="#">營運管理</a>
+                <a href="#">方案費用</a>
+                <a href="#">更多資源</a>
+                <a href="#">開店說明會</a>
+                <button class="blue-white">免費使用</button>
+            </div>
+        </div>
+        <div class="header">
+            <div class="text">
+                <h1>想在哪開店創業？<br>
+                    不管是網路開店<br>
+                    SHOPLINE 一站輕鬆開賣</h1>
+                <p>從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，<br>
+                    快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
+                <button class="blue-white">免費使用14天</button>
+                <p class="small-note">＊無需綁定信用卡提供付款資訊</p>
+            </div>
+            <div class="pic">
+                <img src="\img\1200x.webp">
+            </div>
+        </div>
+    </header>
+
+    <div class="blank"></div>
+    
+    <div class="content">
+        <div class="text">
+            <h1>單一平台就能助你<br>
+                在全通路輕鬆開店創業</h1>
+            <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
+        </div>
+        
+    </div>
+
+    <div class="wrap">
+      <div class="item">
+        <div class="pic">
+          <img src="https://fakeimg.pl/300x200/200" />
+        </div>
+        <div class="text">
+          <h2>免寫程式、多款版型<br>
+            輕鬆打造全能電商網站</h2>
+          <p>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            簡單。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="pic">
+          <img src="https://fakeimg.pl/300x200/200" />
+        </div>
+        <div class="text">
+          <h2>免寫程式、多款版型<br>
+            輕鬆打造全能電商網站</h2>
+          <p>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            簡單。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="pic">
+          <img src="https://fakeimg.pl/300x200/200" />
+        </div>
+        <div class="text">
+          <h2>免寫程式、多款版型<br>
+            輕鬆打造全能電商網站</h2>
+          <p>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            簡單。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="pic">
+          <img src="https://fakeimg.pl/300x200/200" />
+        </div>
+        <div class="text">
+          <h2>免寫程式、多款版型<br>
+            輕鬆打造全能電商網站</h2>
+          <p>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            簡單。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="pic">
+          <img src="https://fakeimg.pl/300x200/200" />
+        </div>
+        <div class="text">
+          <h2>免寫程式、多款版型<br>
+            輕鬆打造全能電商網站</h2>
+          <p>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            簡單。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
