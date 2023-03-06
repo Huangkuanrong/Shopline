@@ -5,372 +5,349 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        * {
-            background: #ebf1f8;
-        }
-        .blue-white {
-            background: #0061ff;
-            color: #fff;
-            border-radius: 10px;
-            border: none;
-            font-size: 16px;
-        }
-        .nav{
-            color: #fff;
-            padding: 20px;
-            width: 1040px;
-            margin: auto;
-        }
-        .nav .menu{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin: auto;
-        }
-        .nav .menu a{
-            padding: 15px;
-            text-decoration: none;
-            color: #00142d;
-            font-size: 16px;
-            text-align: left;
-        }
-        .nav .menu img{
-            height: 25px;
-            margin: auto;
-        }
-        .nav .menu button{
-            width: 140px;
-            height: 50px;
-            margin: auto;
-            font-weight: bold;
-        }
-        .header{
-            display: flex;
-            width: 1040px;
-            margin: auto;
-            margin-top: 50px;
-        }
-        .header .pic{
-            width: 520px;
-            height: 520px;
-            margin: 20px;
-        }
-        .header .pic img{
-            width: 480px;
-            height: 520px;
-            object-fit: cover;
-            object-position: 0% 0%;
-        }
-
-        .header .text{
-            width: 520px;
-            margin: 20px;
-            color: #00142d;
-        }
-
-        .header .text h1{
-            font-size: 40px;
-            font-weight: bold;
-            line-height: 1.3;
-        }
-        .header .text p{
-            font-size: 16px;
-            font-weight: lighter;
-            line-height: 1.8;
-        }
-        .header button{
-            width: 300px;
-            height: 50px;
-        }
-        .header .text .small-note{
-            font-size: 13px;
-            font-weight: lighter;
-            color: #00142d;
-        }
-        .blank{
-            background: #fff;
-            width: 100%;
-            height: 100px;
-        }
-
-        .content{
-            width: 1040px;
-            margin: auto;
-        }
-
-        .content .text{
-            margin-top: 50px;
-            margin-bottom: 80px;
-            color: #00142d;
-            text-align: center;
-            line-height: 1.5;
-        }
-
-
-
-
-        
-        .wrap{
-            width: 1040px;
-            margin: auto;
-            margin-top: 50px;
-        }
-        .wrap .item{
-            display: flex;
-        }
-        .wrap .item:nth-child(odd){
-            flex-direction: row-reverse;
-        }
-        .wrap .item .pic{
-            width: 510px;
-            margin: 5px;
-        }
-        .wrap .item .pic img{
-            width: 100%;
-        }
-        .wrap .item .text{
-            width: 510px;
-            margin: 5px;
-        }
-        .wrap .item .text h2{
-            font-size: 30px;
-            font-weight: bold;
-            line-height: 1.3;
-            margin: 20px 0;
-        }
-        .wrap .item .text p{
-            font-size: 16px;
-            font-weight: lighter;
-            line-height: 1.8;
-        }
-
-        .more{
-            width: 920px;
-            height: 300px;
-        }
-
-        .more .card{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin: auto;
-            width: 300px;
-            height: 300px;
-        }
-        .more .card .item .pic{
-            width: 100%;
-            margin: 5px;
-        }
-        .more .card .item .text h2{
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 1.3;
-        }
-        .more .card .item .text p{
-            width: 300px;
-            font-size: 16px;
-            font-weight: lighter;
-            line-height: 1.8;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script>
-        var slide_index = [0, 50, 100];
-        var i = 0;
-        setTimeout(function(){
-          if (i > 2) {
-            i=0;
-          }
-          else{
-            i++;
-          }
-          document.querySelector('.header .pic img').style.objectPosition  = `${slide_index[i]}% 0%`;
-        }, 1000);
+      var slide_index = [0, 50, 100];
+      var i = 0;
+      setTimeout(function () {
+        if (i > 2) {
+          i = 0;
+        } else {
+          i++;
+        }
+        document.querySelector(
+          ".header .pic img"
+        ).style.objectPosition = `${slide_index[i]}% 0%`;
+      }, 1000);
     </script>
   </head>
   <body>
     <header>
-        <div class="nav">
-            <div class="menu">
-                <img src="img/original--Ao7m1x.png">
-                <a href="#">新手上路</a>
-                <a href="#">開店服務</a>
-                <a href="#">行銷推廣</a>
-                <a href="#">營運管理</a>
-                <a href="#">方案費用</a>
-                <a href="#">更多資源</a>
-                <a href="#">開店說明會</a>
-                <button class="blue-white">免費使用</button>
-            </div>
+      <div class="nav">
+        <div class="menu">
+          <img src="img/original--Ao7m1x.png" />
+          <a href="#">新手上路</a>
+          <a href="#">開店服務</a>
+          <a href="#">行銷推廣</a>
+          <a href="#">營運管理</a>
+          <a href="#">方案費用</a>
+          <a href="#">更多資源</a>
+          <a href="#">開店說明會</a>
+          <button class="blue-white">免費使用</button>
         </div>
-        <div class="header">
-            <div class="text">
-                <h1>想在哪開店創業？<br>
-                    不管是網路開店<br>
-                    SHOPLINE 一站輕鬆開賣</h1>
-                <p>從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，<br>
-                    快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！</p>
-                <button class="blue-white">免費使用14天</button>
-                <p class="small-note">＊無需綁定信用卡提供付款資訊</p>
-            </div>
-            <div class="pic">
-                <img src="img/1200x.webp">
-            </div>
-        </div>
-    </header>
-
-    <div class="blank"></div>
-    
-    <div class="content">
+      </div>
+      <div class="header">
         <div class="text">
-            <h1>單一平台就能助你<br>
-                在全通路輕鬆開店創業</h1>
-            <p>從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，並能同步管理所有銷售管道，SHOPLINE 助你賣得更多、賣得更好！</p>
+          <h1>
+            想在哪開店創業？<br />
+            不管是網路開店<br />
+            SHOPLINE 一站輕鬆開賣
+          </h1>
+          <p>
+            從個人賣家到國際品牌，都能以 SHOPLINE 實現全通路零售，<br />
+            快速拓展市場到世界各地，輕鬆開始你的『 店 』商生意！
+          </p>
+          <button class="blue-white">免費使用14天</button>
+          <p class="small-note">＊無需綁定信用卡提供付款資訊</p>
         </div>
-        
+        <div class="pic">
+          <img src="img/1200x.webp" />
+        </div>
+      </div>
+    </header>
+  
+    <div class="blank"></div>
+  
+    <div class="title">
+      <div class="text">
+        <h1>
+          單一平台就能助你<br />
+          在全通路輕鬆開店創業
+        </h1>
+        <p>
+          從網路商店架站到實體門市管理，只需要一個平台，就能輕鬆實現開店創業，並能同步管理所有銷售管道，SHOPLINE
+          助你賣得更多、賣得更好！
+        </p>
+      </div>
     </div>
-
+  
     <div class="wrap">
       <div class="item">
         <div class="pic">
-          <img src="https://fakeimg.pl/300x200/200" />
+          <img src="/img/500x.webp" />
         </div>
         <div class="text">
-          <h2>免寫程式、多款版型<br>
-            輕鬆打造全能電商網站</h2>
+          <h2>
+            免寫程式、多款版型<br />
+            輕鬆打造全能電商網站
+          </h2>
           <p>
-            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
-            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br />
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br />
             簡單。
           </p>
         </div>
       </div>
       <div class="item">
         <div class="pic">
-          <img src="https://fakeimg.pl/300x200/200" />
+          <img src="/img/500x--2RF640.webp" />
         </div>
         <div class="text">
-          <h2>免寫程式、多款版型<br>
-            輕鬆打造全能電商網站</h2>
+          <h2>
+            免寫程式、多款版型<br />
+            輕鬆打造全能電商網站
+          </h2>
           <p>
-            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
-            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br />
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br />
             簡單。
           </p>
         </div>
       </div>
       <div class="item">
         <div class="pic">
-          <img src="https://fakeimg.pl/300x200/200" />
+          <img src="/img/500x--9HwOI4.webp" />
         </div>
         <div class="text">
-          <h2>免寫程式、多款版型<br>
-            輕鬆打造全能電商網站</h2>
+          <h2>
+            免寫程式、多款版型<br />
+            輕鬆打造全能電商網站
+          </h2>
           <p>
-            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
-            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br />
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br />
             簡單。
           </p>
         </div>
       </div>
       <div class="item">
         <div class="pic">
-          <img src="https://fakeimg.pl/300x200/200" />
+          <img src="img/500x--MEJDhp.webp" />
         </div>
         <div class="text">
-          <h2>免寫程式、多款版型<br>
-            輕鬆打造全能電商網站</h2>
+          <h2>
+            免寫程式、多款版型<br />
+            輕鬆打造全能電商網站
+          </h2>
           <p>
-            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
-            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br />
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br />
             簡單。
           </p>
         </div>
       </div>
       <div class="item">
         <div class="pic">
-          <img src="https://fakeimg.pl/300x200/200" />
+          <img src="/img/500x--pVeSgz.webp" />
         </div>
         <div class="text">
-          <h2>免寫程式、多款版型<br>
-            輕鬆打造全能電商網站</h2>
+          <h2>
+            免寫程式、多款版型<br />
+            輕鬆打造全能電商網站
+          </h2>
           <p>
-            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br>
-            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br>
+            不會寫程式也能輕鬆架設品牌電商官網！任何產業都能找到合適的專業<br />
+            設計版型，以滑鼠拖曳就能完成網頁編輯，讓架設網站就像堆積木一樣<br />
             簡單。
           </p>
         </div>
       </div>
     </div>
-
-    
-    <div class="more">
-      <div class="title">更多功能與服務</div>
-      <div class="card">
-        <div class="item">
-          <div class="pic">
-            <img src="https://fakeimg.pl/100x100/200">
+  
+    <div class="feature">
+      <div class="container">
+        <h1>更多功能與服務</h1>
+        <div class="card">
+          <div class="item">
+            <div class="pic">
+              <img src="https://fakeimg.pl/100x100/200" />
+            </div>
+            <div class="text">
+              <h2 class="title">编辑品牌電商網站</h2>
+              <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
           </div>
-          <div class="text">
-            <h2>強大庫存與訂單系統</h2>
-            <p>
-              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
-            </p>
-        </div>
-        <div class="item">
-          <div class="pic">
-            <img src="https://fakeimg.pl/100x100/200">
+          <div class="item">
+            <div class="pic">
+              <img src="https://fakeimg.pl/100x100/200" />
+            </div>
+            <div class="text">
+              <h2 class="title">编辑品牌電商網站</h2>
+              <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
           </div>
-          <div class="text">
-            <h2>強大庫存與訂單系統</h2>
-            <p>
-              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
-            </p>
-        </div>
-        <div class="item">
-          <div class="pic">
-            <img src="https://fakeimg.pl/100x100/200">
+          <div class="item">
+            <div class="pic">
+              <img src="https://fakeimg.pl/100x100/200" />
+            </div>
+            <div class="text">
+              <h2 class="title">编辑品牌電商網站</h2>
+              <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
           </div>
-          <div class="text">
-            <h2>強大庫存與訂單系統</h2>
-            <p>
-              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
-            </p>
-        </div>
-        <div class="item">
-          <div class="pic">
-            <img src="https://fakeimg.pl/100x100/200">
+          <div class="item">
+            <div class="pic">
+              <img src="https://fakeimg.pl/100x100/200" />
+            </div>
+            <div class="text">
+              <h2 class="title">编辑品牌電商網站</h2>
+              <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
           </div>
-          <div class="text">
-            <h2>強大庫存與訂單系統</h2>
-            <p>
-              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
-            </p>
-        </div>
-        <div class="item">
-          <div class="pic">
-            <img src="https://fakeimg.pl/100x100/200">
+          <div class="item">
+            <div class="pic">
+              <img src="https://fakeimg.pl/100x100/200" />
+            </div>
+            <div class="text">
+              <h2 class="title">编辑品牌電商網站</h2>
+              <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
           </div>
-          <div class="text">
-            <h2>強大庫存與訂單系統</h2>
-            <p>
-              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
-            </p>
-        </div>
-        <div class="item">
-          <div class="pic">
-            <img src="https://fakeimg.pl/100x100/200">
+          <div class="item">
+            <div class="pic">
+              <img src="https://fakeimg.pl/100x100/200" />
+            </div>
+            <div class="text">
+              <h2 class="title">编辑品牌電商網站</h2>
+              <p>從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。</p>
+            </div>
           </div>
-          <div class="text">
-            <h2>強大庫存與訂單系統</h2>
-            <p>
-              從商品數量、貨況到訂單付款狀態、物流貨態一目瞭然，提升營運效率超有感。
-            </p>
         </div>
       </div>
-      
-    </div>
+  
+      <div class="brand">
+        <div class="container">
+          <h1>品牌電商網站</h1>
+          <div class="card">
+            <div class="item">
+              <div class="pic">
+                <img src="/img/original--D5o8SH.png" />
+              </div>
+            </div>
+  
+            <div class="item">
+              <div class="pic">
+                <img src="/img/original--dIC91y.png" />
+              </div>
+            </div>
+  
+            <div class="item">
+              <div class="pic">
+                <img src="/img/original--dY5z6E.png" />
+              </div>
+            </div>
+  
+            <div class="item">
+              <div class="pic">
+                <img src="/img/original--hSwV37.png" />
+              </div>
+            </div>
+  
+            <div class="item">
+              <div class="pic">
+                <img src="/img/original--m4LTvV.png" />
+              </div>
+            </div>
+          </div>
+  
+          <div class="text">
+            SHOPLINE 在行動裝置上操作的順暢度很高；使用者給的建議與意見會採納，
+            處理的速度也不錯；還一直有新功能推出，不斷成長。
+          </div>
+        </div>
+      </div>
+  
+      <div class="tagline">
+        <h1>全亞洲超過 500,000 個品牌都在使用 SHOPLINE</h1>
+        <button class="blue-white">免費使用14天</button>
+      </div>
+  
+      <div class="footer">
+        <div class="content content1">
+          <div class="text">
+            <a href="#">關於我們</a>
+            <a href="#">人才招募</a>
+            <a href="#">媒體專區</a>
+          </div>
+        </div>
+        <div class="line">
+        </div>
+        <div class="content content2">
+          <div class="text">
+            <h3>網路開店</h3>
+            <a href="#">特色總覽</a>
+            <a href="#">功能介紹</a>
+            <a href="#">版型主題</a>
+            <a href="#">客戶案例</a>
+          </div>
+          <div class="text">
+            <h3>網路開店</h3>
+            <a href="#">特色總覽</a>
+            <a href="#">功能介紹</a>
+            <a href="#">版型主題</a>
+            <a href="#">客戶案例</a>
+          </div>
+          <div class="text">
+            <h3>網路開店</h3>
+            <a href="#">特色總覽</a>
+            <a href="#">功能介紹</a>
+            <a href="#">版型主題</a>
+            <a href="#">客戶案例</a>
+          </div>
+          <div class="text">
+            <h3>網路開店</h3>
+            <a href="#">特色總覽</a>
+            <a href="#">功能介紹</a>
+            <a href="#">版型主題</a>
+            <a href="#">客戶案例</a>
+          </div>
+          <div class="text">
+            <h3>網路開店</h3>
+            <a href="#">特色總覽</a>
+            <a href="#">顧問陪跑計劃</a>
+            <a href="#">網路開店</a>
+            <a href="#">特色總覽</a>
+            <a href="#">顧問陪跑計劃</a>
+            <a href="#">SHOPLINE TRENDS 電商數據庫</a>
+            <a href="#">LINE 官方帳號</a>
+          </div>
+          <div class="text">
+            <h3>SHOPLINE</h3>
+            <a href="#">特色總覽</a>
+            <a href="#">顧問陪跑計劃</a>
+            <a href="#">網路開店</a>
+          </div>
+          <div class="content content3">
+            <button>資訊安全保護專區</button>
+          </div>
+          <div class="line">
+  
+          </div>
+          <div class="content content4">
+            <div class="addr">
+              服務時間 星期一至五 上午 10 點至晚上 7 點<br>
+              © Copyright 2023 SHOPLINE Tech Co., Ltd.
+            </div>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+  
+          <div class="content content5">
+            <div class="text">
+              <a href="#">特色總覽</a>
+              <div class="short-line"></div>
+              <a href="#">顧問陪跑計劃</a>
+              <div class="short-line"></div>
+              <a href="#">網路開店</a>
+            </div>
+          </div>
+        </div>
   </body>
-</html>
+  
+  </html>
