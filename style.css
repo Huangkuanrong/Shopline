@@ -67,6 +67,7 @@ button:hover {
     height: 520px;
     object-fit: cover;
     object-position: 0% 0%;
+    transition: 1s;
 }
 
 .header .text {
@@ -254,6 +255,13 @@ button:hover {
     margin: auto;
     border-radius: 0;
     align-items: center;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.brand .container .card .item .pic img:hover {
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .brand .container .text {

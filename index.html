@@ -7,18 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script>
-      var slide_index = [0, 50, 100];
-      var i = 0;
-      setTimeout(function () {
-        if (i > 2) {
-          i = 0;
-        } else {
-          i++;
+      const slide_index = [0, 50, 100];
+      var count = 0;
+      setInterval(function () {
+        count+=1;
+        if (count > 2) {
+          count = 0;
         }
         document.querySelector(
           ".header .pic img"
-        ).style.objectPosition = `${slide_index[i]}% 0%`;
-      }, 1000);
+        ).style.objectPosition = `${slide_index[count]}% 0%`;
+      }, 2000);
     </script>
   </head>
   <body>
@@ -41,6 +40,7 @@
           <h1>
             想在哪開店創業？<br />
             不管是網路開店<br />
+            SHOPLINE 一站輕鬆開賣
             SHOPLINE 一站輕鬆開賣
           </h1>
           <p>
@@ -74,7 +74,7 @@
     <div class="wrap">
       <div class="item">
         <div class="pic">
-          <img src="/img/500x.webp" />
+          <img src="img/500x.webp" />
         </div>
         <div class="text">
           <h2>
@@ -90,7 +90,7 @@
       </div>
       <div class="item">
         <div class="pic">
-          <img src="/img/500x--2RF640.webp" />
+          <img src="img/500x--2RF640.webp" />
         </div>
         <div class="text">
           <h2>
@@ -106,7 +106,7 @@
       </div>
       <div class="item">
         <div class="pic">
-          <img src="/img/500x--9HwOI4.webp" />
+          <img src="img/500x--9HwOI4.webp" />
         </div>
         <div class="text">
           <h2>
@@ -138,7 +138,7 @@
       </div>
       <div class="item">
         <div class="pic">
-          <img src="/img/500x--pVeSgz.webp" />
+          <img src="img/500x--pVeSgz.webp" />
         </div>
         <div class="text">
           <h2>
@@ -221,31 +221,31 @@
           <div class="card">
             <div class="item">
               <div class="pic">
-                <img src="/img/original--D5o8SH.png" />
+                <img src="img/original--D5o8SH.png" />
               </div>
             </div>
   
             <div class="item">
               <div class="pic">
-                <img src="/img/original--dIC91y.png" />
+                <img src="img/original--dIC91y.png" />
               </div>
             </div>
   
             <div class="item">
               <div class="pic">
-                <img src="/img/original--dY5z6E.png" />
+                <img src="img/original--dY5z6E.png" />
               </div>
             </div>
   
             <div class="item">
               <div class="pic">
-                <img src="/img/original--hSwV37.png" />
+                <img src="img/original--hSwV37.png" />
               </div>
             </div>
   
             <div class="item">
               <div class="pic">
-                <img src="/img/original--m4LTvV.png" />
+                <img src="img/original--m4LTvV.png" />
               </div>
             </div>
           </div>
